@@ -24,6 +24,6 @@ def merge_sort(arr,l,r):
         arr[l+a]=tmp[a]
     return num
 
-print("请输入数列，数字之间用空格隔开：")
-arr=[int(x) for x in input().split()]
-print(merge_sort(arr,0,len(arr)-1))
+n=int(input())
+arr=list(map(int,input().split()))
+print(merge_sort(arr,0,n-1))
