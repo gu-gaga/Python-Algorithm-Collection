@@ -10,10 +10,9 @@ def check_mid(arr,num,n):
     if arr[l]!=num:
         print("-1 -1")
     else:
-        r+=1
-        while arr[r]==num:
+        while r+1<n and arr[r+1]==num:
             r+=1
-        print(f"{l} {r-1}")
+        print(f"{l} {r}")
     return 0
 
 n,q=map(int,input().split())
