@@ -6,8 +6,9 @@ i=0
 for j in range(m):
     if a[i]==b[j]:
         i+=1
-    if i==n-1:
+    if i==n:
         print("Yes")
         break
-if i!=n-1:
+if i!=n:
     print("No")
+
