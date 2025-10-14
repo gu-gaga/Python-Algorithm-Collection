@@ -7,5 +7,5 @@ for i in range(n):
     while a[i]+b[j]>x:
         j-=1
     if a[i]+b[j]==x:
-        print(f"{a[i]} {b[j]}")
+        print(f"{i} {j}")
         break
