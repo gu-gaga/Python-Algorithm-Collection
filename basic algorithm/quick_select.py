@@ -23,9 +23,6 @@ def quick_sort(arr, l, r,k):
     else:
         return quick_sort(arr, i+1, r,k)
 
-
-print("请输入数列，用空格分隔：")
-arr = [int(x) for x in input().split()]
-print("请输入k：")
-k=int(input())
-print(quick_sort(arr, 0, len(arr) - 1,k))
+n,k=map(int,input().split())
+arr=list(map(int,input().split()))
+print(quick_sort(arr, 0, n-1, k))
