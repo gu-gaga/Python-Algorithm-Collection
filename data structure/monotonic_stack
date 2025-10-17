@@ -1,0 +1,12 @@
+# 单调栈
+n=int(input())
+stack=[]
+for a in input().split():
+    num=int(a)
+    while stack and stack[-1]>=num:
+        stack.pop()
+    if stack:
+        print(stack[-1],end=' ')
+    else:
+        print(-1,end=' ')
+    stack.append(num)
